@@ -1,0 +1,15 @@
+public class Main {
+
+    public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Input number:");
+            int x;
+            do {
+                x = scanner.nextInt();
+            } while (x < 10 || x > 99);
+
+            if (x % 10 > x / 10) System.out.println("Единиц больше");
+            else if (x % 10 < x / 10) System.out.println("Десятков больше");
+            else System.out.println("Поровну");
+               }
+}
