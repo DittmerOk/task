@@ -1,0 +1,22 @@
+public class Main {
+
+
+    public static void main(String[] args){
+
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
+        int a1 = scanner.nextInt();
+        int b1 = scanner.nextInt();
+        int c1 = scanner.nextInt();
+
+        System.out.print((((a + a1) * 3600) +((b + b1) * 60) + (c + c1)) % 86400/ 3600 + " ") ;
+        System.out.print((((a + a1) * 3600) +((b + b1) * 60) + (c + c1))% 3600 / 60 + " ");
+        System.out.print((((a + a1) * 3600) +((b + b1) * 60) + (c + c1))% 60);
+
+
+
+
+    }
+}
