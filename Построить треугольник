@@ -1,0 +1,12 @@
+   Scanner scanner = new Scanner(System.in);
+            int a = scanner.nextInt();
+            int b = scanner.nextInt();
+            int c = scanner.nextInt();
+            System.out.println(canBuildTriangle(a, b, c));
+
+        }
+
+        private static boolean canBuildTriangle(double a, double b, double c) {
+            return (a < (b + c)) && (b < (a + c)) && (c < (a + b));
+        }
+    }
